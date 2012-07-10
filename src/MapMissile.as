@@ -1,4 +1,4 @@
-package com.pigtracer.lab {
+package    {
   import flash.ui.Keyboard;
   import uk.co.soulwire.gui.SimpleGUI;
   import flash.geom.Point;
@@ -20,6 +20,10 @@ package com.pigtracer.lab {
   import flash.display.StageScaleMode;
   import flash.events.Event;
   import flash.display.Sprite;
+  import com.pigtracer.lab.BoomIcon;
+  import com.pigtracer.lab.Explode;
+  import com.pigtracer.lab.Hit;
+  import com.pigtracer.lab.HitList;
 
   [SWF(width="800", height="600", backgroundColor="0xFFFFFF", frameRate="60")]
   public class MapMissile extends Sprite {
@@ -59,7 +63,7 @@ package com.pigtracer.lab {
       stage.align = StageAlign.TOP_LEFT;
 
       initMap();
-      initGUI();
+//      initGUI();
     }
 
     private function initGUI():void {
