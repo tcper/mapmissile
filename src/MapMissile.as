@@ -63,6 +63,9 @@ package    {
       stage.align = StageAlign.TOP_LEFT;
 
       initMap();
+      
+      
+      
 //      initGUI();
     }
 
