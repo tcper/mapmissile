@@ -1,29 +1,29 @@
-package    {
-  import flash.ui.Keyboard;
-  import uk.co.soulwire.gui.SimpleGUI;
-  import flash.geom.Point;
-  import baidu.map.event.MapEvent;
-  import baidu.map.config.MarkerLayout;
-  import baidu.map.overlay.Marker;
-  import flash.text.TextFormat;
-  import baidu.map.overlay.Label;
-  import baidu.map.overlay.geometry.Circle;
-  import baidu.map.control.base.Scaler;
-  import baidu.map.overlay.geometry.Polygon;
-  import baidu.map.layer.Layer;
-  import baidu.map.layer.RasterLayer;
+package {
+  import com.pigtracer.lab.panel.RegisterPanel;
+  import com.liquid.controls.LiquidButton;
   import baidu.map.basetype.LngLat;
   import baidu.map.basetype.Size;
+  import baidu.map.config.MarkerLayout;
+  import baidu.map.control.base.Scaler;
   import baidu.map.core.Map;
+  import baidu.map.event.MapEvent;
+  import baidu.map.layer.Layer;
+  import baidu.map.layer.RasterLayer;
+  import baidu.map.overlay.Marker;
 
-  import flash.display.StageAlign;
-  import flash.display.StageScaleMode;
-  import flash.events.Event;
-  import flash.display.Sprite;
+  import uk.co.soulwire.gui.SimpleGUI;
+
   import com.pigtracer.lab.BoomIcon;
   import com.pigtracer.lab.Explode;
   import com.pigtracer.lab.Hit;
   import com.pigtracer.lab.HitList;
+
+  import flash.display.Sprite;
+  import flash.display.StageAlign;
+  import flash.display.StageScaleMode;
+  import flash.events.Event;
+  import flash.geom.Point;
+  import flash.text.TextFormat;
 
   [SWF(width="800", height="600", backgroundColor="0xFFFFFF", frameRate="60")]
   public class MapMissile extends Sprite {
@@ -62,10 +62,9 @@ package    {
       stage.scaleMode = StageScaleMode.NO_SCALE;
       stage.align = StageAlign.TOP_LEFT;
 
-      initMap();
-      
-      
-      
+      addChild(new RegisterPanel());
+
+      //initMap();
 //      initGUI();
     }
 
